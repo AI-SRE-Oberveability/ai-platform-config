@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+.runtime/
+.ruff_cache/
+.pytest_cache/
+rendered/
+.env
+.env.*
+*.key
+*.pem
+*.tfstate*
+*.tfplan
+*.tgz
+kubeconfig*
