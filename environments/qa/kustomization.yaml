@@ -1,0 +1,11 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- ../../namespaces/workload
+- ../../policies/workload
+- ../../rbac/workload
+namespace: ai-lab-qa
+labels:
+- pairs:
+    ai-lab.example/environment: qa
+  includeSelectors: false

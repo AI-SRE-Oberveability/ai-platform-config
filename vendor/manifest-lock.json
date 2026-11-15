@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "artifacts": [
+    {
+      "path": "vendor/argocd/v3.6.1/application-crd.yaml",
+      "url": "https://raw.githubusercontent.com/argoproj/argo-cd/94037c4d4e1af4bd0651d37a179fbd9e347e668c/manifests/crds/application-crd.yaml",
+      "sha256": "9fd0da3e7097ad6d1af614fabd5c960bc7ddb00d768c3ef485a2fda6e9460df8",
+      "kind": "crd",
+      "repository": "argoproj/argo-cd",
+      "commit": "94037c4d4e1af4bd0651d37a179fbd9e347e668c",
+      "version": "3.6.1"
+    },
+    {
+      "path": "vendor/argocd/v3.6.1/applicationset-crd.yaml",
+      "url": "https://raw.githubusercontent.com/argoproj/argo-cd/94037c4d4e1af4bd0651d37a179fbd9e347e668c/manifests/crds/applicationset-crd.yaml",
+      "sha256": "980128848a8d2152b946aec6a11cdd1174b38b04587f4fba94537c040fd84202",
+      "kind": "crd",
+      "repository": "argoproj/argo-cd",
+      "commit": "94037c4d4e1af4bd0651d37a179fbd9e347e668c",
+      "version": "3.6.1"
+    },
+    {
+      "path": "vendor/argocd/v3.6.1/appproject-crd.yaml",
+      "url": "https://raw.githubusercontent.com/argoproj/argo-cd/94037c4d4e1af4bd0651d37a179fbd9e347e668c/manifests/crds/appproject-crd.yaml",
+      "sha256": "084150a2feccd188a1dee09cd8a3a259dfacecdfb7e10037df78900f60816482",
+      "kind": "crd",
+      "repository": "argoproj/argo-cd",
+      "commit": "94037c4d4e1af4bd0651d37a179fbd9e347e668c",
+      "version": "3.6.1"
+    },
+    {
+      "path": "vendor/kubernetes/v1.35.0/namespace.json",
+      "url": "https://raw.githubusercontent.com/yannh/kubernetes-json-schema/2bfaff3898a7a4fa4e4760da3d2656211c9b4c71/v1.35.0-standalone-strict/namespace.json",
+      "sha256": "99301bb4ecb85094c9708ee076b5bdcc23465a1352dd0f1d9189e39d2fbeeac3",
+      "kind": "schema",
+      "repository": "yannh/kubernetes-json-schema",
+      "commit": "2bfaff3898a7a4fa4e4760da3d2656211c9b4c71",
+      "version": "1.35.0"
+    },
+    {
+      "path": "vendor/kubernetes/v1.35.0/resourcequota.json",
+      "url": "https://raw.githubusercontent.com/yannh/kubernetes-json-schema/2bfaff3898a7a4fa4e4760da3d2656211c9b4c71/v1.35.0-standalone-strict/resourcequota.json",
+      "sha256": "4b39616e37715cc84964eaa9eff9d28886893904d4f24fffffd2dcffaa61af0b",
+      "kind": "schema",
+      "repository": "yannh/kubernetes-json-schema",
+      "commit": "2bfaff3898a7a4fa4e4760da3d2656211c9b4c71",
+      "version": "1.35.0"
+    },
+    {
+      "path": "vendor/kubernetes/v1.35.0/limitrange.json",
+      "url": "https://raw.githubusercontent.com/yannh/kubernetes-json-schema/2bfaff3898a7a4fa4e4760da3d2656211c9b4c71/v1.35.0-standalone-strict/limitrange.json",
+      "sha256": "68f18a72fdc45183d6c9cde1cee16e7925f0f4d9b30db5adb214303a362f683a",
+      "kind": "schema",
+      "repository": "yannh/kubernetes-json-schema",
+      "commit": "2bfaff3898a7a4fa4e4760da3d2656211c9b4c71",
+      "version": "1.35.0"
+    },
+    {
+      "path": "vendor/kubernetes/v1.35.0/role-rbac-v1.json",
+      "url": "https://raw.githubusercontent.com/yannh/kubernetes-json-schema/2bfaff3898a7a4fa4e4760da3d2656211c9b4c71/v1.35.0-standalone-strict/role-rbac-v1.json",
+      "sha256": "dfe8fb03b1642f985b57b12edd1727b6867c13ed4b6761ef81bdd51b1d236711",
+      "kind": "schema",
+      "repository": "yannh/kubernetes-json-schema",
+      "commit": "2bfaff3898a7a4fa4e4760da3d2656211c9b4c71",
+      "version": "1.35.0"
+    },
+    {
+      "path": "vendor/kubernetes/v1.35.0/networkpolicy-networking-v1.json",
+      "url": "https://raw.githubusercontent.com/yannh/kubernetes-json-schema/2bfaff3898a7a4fa4e4760da3d2656211c9b4c71/v1.35.0-standalone-strict/networkpolicy-networking-v1.json",
+      "sha256": "f6324cc464f62228b0418f438d167208e4f86c7e3677ba30f608e79a8b26ba79",
+      "kind": "schema",
+      "repository": "yannh/kubernetes-json-schema",
+      "commit": "2bfaff3898a7a4fa4e4760da3d2656211c9b4c71",
+      "version": "1.35.0"
+    },
+    {
+      "path": "vendor/kubernetes/v1.35.0/apiextensions-v1-openapi.json",
+      "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/66452049f3d692768c39c797b21b793dce80314e/api/openapi-spec/v3/apis__apiextensions.k8s.io__v1_openapi.json",
+      "sha256": "f6eb40887f8ce499c83f6032da1b35f980ecf8e6a312c06078f1356e3aa3d3e4",
+      "kind": "openapi",
+      "repository": "kubernetes/kubernetes",
+      "commit": "66452049f3d692768c39c797b21b793dce80314e",
+      "version": "1.35.0"
+    },
+    {
+      "path": "vendor/licenses/argocd-LICENSE",
+      "url": "https://github.com/argoproj/argo-cd/blob/94037c4d4e1af4bd0651d37a179fbd9e347e668c/LICENSE",
+      "sha256": "c996fc213c94f4a4a838407d355b081226caa7b103a4f239bb87fb8f1d8e3a60",
+      "kind": "license",
+      "repository": "argoproj/argo-cd",
+      "commit": "94037c4d4e1af4bd0651d37a179fbd9e347e668c",
+      "license_spdx": "Apache-2.0"
+    },
+    {
+      "path": "vendor/licenses/schema-LICENSE",
+      "url": "https://github.com/yannh/kubernetes-json-schema/blob/2bfaff3898a7a4fa4e4760da3d2656211c9b4c71/LICENSE",
+      "sha256": "557176ee78f6a6e9c28ebc0f0037ab9acb887b3b5167e9494195109b05affc14",
+      "kind": "license",
+      "repository": "yannh/kubernetes-json-schema",
+      "commit": "2bfaff3898a7a4fa4e4760da3d2656211c9b4c71",
+      "license_spdx": "Apache-2.0",
+      "license_identification": "Reviewed upstream Apache-2.0 notice; GitHub API classification was NOASSERTION; full Apache text retained in kubernetes-LICENSE"
+    },
+    {
+      "path": "vendor/licenses/kubernetes-LICENSE",
+      "url": "https://github.com/kubernetes/kubernetes/blob/66452049f3d692768c39c797b21b793dce80314e/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "kind": "license",
+      "repository": "kubernetes/kubernetes",
+      "commit": "66452049f3d692768c39c797b21b793dce80314e",
+      "license_spdx": "Apache-2.0"
+    }
+  ],
+  "argo_cd_version": "3.6.1",
+  "kubernetes_schema_version": "1.35.0",
+  "deployment_target": "unverified_offline_schema_baseline_only"
+}
