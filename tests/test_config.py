@@ -162,6 +162,13 @@ class ConfigurationChecks(unittest.TestCase):
         with self.assertRaises(ValueError):
             config.policy_check(obj)
 
+    def test_rendered_crd_schema_cannot_bypass_the_upstream_lock(self):
+        values = copy.deepcopy(self.objects)
+        crd = next(obj for obj in values if obj["kind"] == "CustomResourceDefinition")
+        crd["spec"]["names"]["categories"] = ["altered-through-an-authored-input"]
+        with self.assertRaisesRegex(ValueError, "Rendered CRD differs"):
+            config.inspect_objects(values)
+
     def test_yaml_duplicate_keys_nonobjects_and_unsafe_tags_rejected(self):
         for text in [
             "kind: Role\nkind: Secret\n",

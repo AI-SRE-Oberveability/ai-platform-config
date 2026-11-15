@@ -267,7 +267,24 @@ def inspect_objects(objects, root=ROOT):
         if identity in seen:
             raise ValueError("Duplicate resource identity, independent of API version")
         seen.add(identity)
+    vendor_lock = json.loads(
+        (root / "vendor/manifest-lock.json").read_text(encoding="utf-8")
+    )
+    original_crds = {}
+    for row in vendor_lock["artifacts"]:
+        if row["kind"] == "crd":
+            documents = load_yaml(owned(root, row["path"]).read_text(encoding="utf-8"))
+            if (
+                len(documents) != 1
+                or documents[0].get("kind") != "CustomResourceDefinition"
+            ):
+                raise ValueError("Locked CRD source is not a single CRD")
+            original_crds[documents[0]["metadata"]["name"]] = documents[0]
     for obj in objects:
+        if obj.get("kind") == "CustomResourceDefinition" and obj != original_crds.get(
+            obj.get("metadata", {}).get("name")
+        ):
+            raise ValueError("Rendered CRD differs from its locked upstream object")
         schema_check(obj, root)
         policy_check(obj)
     namespaces = {

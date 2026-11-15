@@ -18,4 +18,6 @@ Future application charts must use `app.kubernetes.io/part-of: ai-lab` and compo
 
 The validator verifies vendored raw hashes/licences, rejects remote/escaping Kustomize inputs and generators, uses checksum-verified Kustomize, builds three profiles and checks schema/scope/ownership. Duplicate identities across API versions, unsafe RBAC, unapproved namespace/network allowances and weakened default deny fail. It explicitly applies Draft 4 keyword checks to locked swagger-derived standalone schema# inputs and official Kubernetes OpenAPI components; unknown dialects fail and remote schema retrieval is forbidden.
 
+Rendered CRDs must also equal the parsed locked upstream objects. An authored assembly cannot substitute or transform a CRD schema while leaving an unused original file/hash intact.
+
 This does not execute Kubernetes admission/CEL, prove structural CRD installation or enforce NetworkPolicy/PSA. No bootstrap handover, identity grant, application traffic, image digest or release acceptance is inferred. Later P2.13 charts/GitOps and combined handover checks remain; actual AKS support/targets and cloud gates must be rechecked before deployment.
